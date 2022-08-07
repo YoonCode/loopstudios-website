@@ -1,2 +1,3 @@
-# loopstudios-website
-loopstudios website project with tailwindcss
+# Loopstudios Website Project
+
+Loopstudios Website project with tailwindcss
