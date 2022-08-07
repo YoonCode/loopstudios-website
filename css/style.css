@@ -642,6 +642,10 @@ h5 {
   top: 12rem;
 }
 
+.z-40 {
+  z-index: 40;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -679,6 +683,10 @@ h5 {
 
 .mb-8 {
   margin-bottom: 2rem;
+}
+
+.block {
+  display: block;
 }
 
 .flex {
@@ -767,10 +775,6 @@ h5 {
 
 .border-2 {
   border-width: 2px;
-}
-
-.border-b {
-  border-bottom-width: 1px;
 }
 
 .bg-white {
@@ -931,14 +935,62 @@ h5 {
   }
 }
 
+/* Hamburger Menu */
+
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  top: 0;
+  left: 0;
+  background: #fff;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
+.open {
+  transform: rotate(90deg);
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+
+.open .hamburger-middle {
+  display: none;
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
+
+.focus\:outline-none:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
 .group:hover .group-hover\:scale-110 {
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.group:hover .group-hover\:border {
-  border-width: 1px;
 }
 
 .group:hover .group-hover\:border-b {
